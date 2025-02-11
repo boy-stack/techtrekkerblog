@@ -1,4 +1,4 @@
-import { blog_data } from "@/assets/assets";
+import { blog_data } from "@/Assets/assets";
 import React, { useEffect, useState } from "react";
 import BlogItem from "./BlogItem";
 import { set } from "mongoose";

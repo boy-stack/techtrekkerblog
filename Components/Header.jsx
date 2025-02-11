@@ -8,15 +8,21 @@ export const Header = () => {
   const [email, setEmail] = useState("");
 
   const onSubmitHandler = async (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("email", email);
-    const response = await axios.post("/api/email", formData);
-    if (response.data.success) {
-      toast.success(response.data.msg);
-      setEmail("");
-    } else {
-      toast.error("Error");
+    e.preventDefault(); // Mencegah halaman reload
+    try {
+      const formData = new FormData();
+      formData.append("email", email);
+      const response = await axios.post("/api/email", formData);
+
+      if (response.data.success) {
+        toast.success(response.data.msg);
+        setEmail("");
+      } else {
+        toast.error("Error");
+      }
+    } catch (error) {
+      toast.error("Failed to subscribe. Please try again.");
+      console.error("Error submitting email:", error);
     }
   };
 
@@ -26,18 +32,18 @@ export const Header = () => {
         <Image
           src={assets.logo_TechTrekker}
           width={180}
-          alt=""
+          alt="TechTrekker Logo"
           className="w-[130px] sm:w-auto border-solid border-black shadow-[-7px_7px_0px_#000000]"
         />
         <button className="flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid border-black shadow-[-7px_7px_0px_#000000]">
-          Get started <Image src={assets.arrow} />
+          Get started <Image src={assets.arrow} alt="Arrow Icon" />
         </button>
       </div>
       <div className="text-center my-8">
         <h1 className="text-3xl sm:text-5xl font-medium">Latest Blogs</h1>
         <p className="mt-10 max-w-[740px] m-auto text-xs sm:text-base">
           Selamat Datang di TechTrekker Blog, tempatnya berbagi informasi tech,
-          lifestyle, wisata dan riview barang yang unik.
+          lifestyle, wisata, dan review barang yang unik.
         </p>
         <form
           onSubmit={onSubmitHandler}
@@ -50,6 +56,7 @@ export const Header = () => {
             type="email"
             placeholder="Enter your email"
             className="pl-4 outline-none"
+            required
           />
           <button
             type="submit"

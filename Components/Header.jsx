@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { assets } from "../Assets/assets";
+import { assets } from "../assets/assets";
 import axios from "axios";
 import { toast } from "react-toastify";
 

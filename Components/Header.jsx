@@ -41,7 +41,7 @@ export const Header = () => {
         </p>
         <form
           onSubmit={onSubmitHandler}
-          className="flex flex-col sm:flex-row items-center justify-between max-w-[500px] mx-auto mt-10 border border-black shadow-[-7px_7px_0px_#000000] p-4"
+          className="flex justify-between max-[500px] scale-75 sm:scale-100 mx-auto mt-10 border border-black shadow-[-7px_7px_0px_#000000]"
           action=""
         >
           <input
@@ -49,11 +49,11 @@ export const Header = () => {
             value={email}
             type="email"
             placeholder="Enter your email"
-            className="pl-4 outline-none mb-4 sm:mb-0 w-full sm:w-auto"
+            className="pl-4 outline-none"
           />
           <button
             type="submit"
-            className="border border-black py-2 px-4 sm:ml-4 active:bg-gray-600 active:text-white"
+            className="border-1 border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white"
           >
             Subscribe
           </button>

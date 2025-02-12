@@ -3,6 +3,7 @@ import Image from "next/image";
 import { assets } from "../Assets/assets";
 import axios from "axios";
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Ensure you import Toastify CSS
 
 export const Header = () => {
   const [email, setEmail] = useState("");

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -44,6 +45,8 @@ next-env.d.ts
 =======
 =======
 >>>>>>> origin/main
+=======
+>>>>>>> cb369e4bf049e83a1669495c0beb33e674115972
 # Build and Release Folders
 bin-debug/
 bin-release/
@@ -63,6 +66,9 @@ bin-release/
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5ce28448f6177c7e0774463a8b227703f4dc945a
 =======
 >>>>>>> origin/main
+=======
+>>>>>>> cb369e4bf049e83a1669495c0beb33e674115972

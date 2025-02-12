@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -49,3 +50,6 @@ blog peribadi
 # techtrekkerblog
 Blog pribadi
 >>>>>>> origin/main
+=======
+# techtrekkerblog
+>>>>>>> cb369e4bf049e83a1669495c0beb33e674115972
